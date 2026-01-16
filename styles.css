@@ -63,11 +63,30 @@ img {
 
 .sectionHero {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(5, 20%);
   padding-left: var(--largeSpace);
   border-bottom: var(--tinySpace) solid;
   
+}
+
+.heroText {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+
+
+}
+
+.heroImg {
+  grid-column-start: 3 ;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5; 
+  padding-left: var(--largeSpace);
+  padding-top: var(--largeSpace);
+  max-height: 100%;
 }
 
 .sectionCatFact {
